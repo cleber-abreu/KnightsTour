@@ -51,6 +51,8 @@ public class MainWindow extends JFrame {
 					@Override
 					public void mouseClicked(MouseEvent arg0) {
 						lblStatus.setText("Processando...");
+						lblStatus.revalidate();
+						KnigthTour.n = Integer.parseInt(txtX.getText());
 						board.paintBoard(KnigthTour.n);
 						if (KnigthTour.tour(Integer.parseInt(txtY.getText()), 
 								Integer.parseInt(txtX.getText()), 

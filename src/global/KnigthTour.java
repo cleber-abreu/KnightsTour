@@ -22,13 +22,6 @@ public class KnigthTour {
 		table[row][col] = 1;
 
 		if (tryMove(2, row, col)) {
-			
-//			for (int r = 0; r < n; r++) {
-//				for (int c = 0; c < n; c++) {
-//					System.out.print(table[r][c] + "\t");
-//				}
-//				System.out.println();
-//			}
 			return true;
 		} 
 		else {
